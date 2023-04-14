@@ -9,7 +9,7 @@ namespace Progrm16_Practice
 	/// <summary>
 	/// 사용자가 입력한 양의 정수의 각 자리수의 합을 구하는 Solution 을 완성하라.
 	/// </summary>
-	internal class _4_DigitalSum
+	internal class DigitalSum
 	{
 		public void DoDigitalSum()
 		{
