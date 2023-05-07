@@ -163,8 +163,10 @@ namespace Progrm16_Practice
 
 			StringBuilder chkHorizontal = new StringBuilder();
 			StringBuilder chkVertical = new StringBuilder();
+			StringBuilder DiagonalL = new StringBuilder();
+			StringBuilder DiagonalR = new StringBuilder();
 
-			for (int i = 0; i < LEN; i++)
+			for (int i = 0; i < LEN; )
 			{
 				for (int j = 0; j < LEN; j++)
 				{
@@ -176,15 +178,9 @@ namespace Progrm16_Practice
 
 				chkHorizontal.Clear();
 				chkVertical.Clear();
-			}
 
-			StringBuilder DiagonalL = new StringBuilder();
-			StringBuilder DiagonalR = new StringBuilder();
-
-			for (int i = 0; i < LEN; )
-			{
 				DiagonalL.Append(map[i, i]);
-				DiagonalR.Append(map[i, LEN-(++i)]);
+				DiagonalR.Append(map[i, LEN - (++i)]);
 			}
 			cnt += DiagonalL.ToString() == "#####" ? 1 : 0;
 			cnt += DiagonalR.ToString() == "#####" ? 1 : 0;
