@@ -4,7 +4,11 @@
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Hello, World!");
+			StartConsole startConsole = new StartConsole();
+			startConsole.ReadAndWrite();
+
+			Tranning tranning = new Tranning();
+			tranning.StartTraining0327();
 		}
 	}
 }
